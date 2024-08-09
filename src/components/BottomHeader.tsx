@@ -24,7 +24,10 @@ const BottomHeader = () => {
         </h3>
         <ul className="flex items-center justify-center gap-x-5 ">
           {navigation?.map((item) => (
-            <li className="cursor-pointer hover:text-blue-600 duration-300 text-base font-semibold">
+            <li
+              key={item.title}
+              className="cursor-pointer hover:text-blue-600 duration-300 text-base font-semibold"
+            >
               {item?.title}
             </li>
           ))}
